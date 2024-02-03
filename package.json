@@ -1,0 +1,52 @@
+{
+  "name": "@jamilservices/sb-module-json-cache-store",
+  "description": "Simply Builder Module - Temporary Fetch JSON Cache",
+  "version": "1.0.0",
+  "main": "./umd/main.js",
+  "module": "./umd/main.js",
+  "browser": "./umd/main.js",
+  "types": "./umd/main.d.ts",
+  "files": [
+    "umd"
+  ],
+  "exports": {
+    "default": "./umd/main.umd.js",
+    "types": "./umd/main.d.ts"
+  },
+  "scripts": {
+    "generate:lock": "npm install --package-lock-only",
+    "version:patch": "npx changelogen@latest --bump --patch",
+    "version:minor": "npx changelogen@latest --bump --minor",
+    "version:major": "npx changelogen@latest --bump --major"
+  },
+  "homepage": "https://simplybuilder.github.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimplyBuilder/sb-module-json-cache-store.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SimplyBuilder/sb-module-json-cache-store/issues"
+  },
+  "author": "Jamil Serviços <jamilservicos@gmail.com> (https://github.com/jamilservicos)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.10.x"
+  },
+  "keywords": [
+    "jamilservicos",
+    "jamilservices",
+    "nodejs",
+    "javascript",
+    "simply-builder",
+    "simplybuilder",
+    "simply",
+    "builder",
+    "module",
+    "fetch",
+    "json",
+    "cache"
+  ],
+  "devDependencies": {
+
+  }
+}
