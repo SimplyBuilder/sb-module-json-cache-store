@@ -2,18 +2,35 @@
   "name": "@jamilservices/sb-module-json-cache-store",
   "description": "Simply Builder Module - Temporary Fetch JSON Cache",
   "version": "1.0.0",
-  "main": "./umd/main.js",
-  "module": "./umd/main.js",
-  "browser": "./umd/main.js",
-  "types": "./umd/main.d.ts",
+  "main": "./lib/json-cache.min.common.cjs",
+  "module": "./lib/json-cache.min.esm.mjs",
+  "browser": "./lib/json-cache.min.umd.js",
+  "types": "./lib/json-cache.d.ts",
+  "type": "module",
   "files": [
-    "umd"
+    "AUTHORS",
+    "lib/json-cache.min.umd.js",
+    "lib/json-cache.min.umd.mjs",
+    "lib/json-cache.min.umd.cjs",
+    "lib/json-cache.min.esm.mjs",
+    "lib/json-cache.min.common.cjs",
+    "lib/json-cache.d.ts"
   ],
   "exports": {
-    "default": "./umd/main.umd.js",
-    "types": "./umd/main.d.ts"
+    "node": {
+      "default": "./lib/json-cache.min.common.cjs"
+    },
+    "default": "./lib/json-cache.min.umd.js",
+    "types": "./lib/json-cache.d.ts"
   },
   "scripts": {
+    "build": "node scripts/build.mjs",
+    "clean": "node scripts/clean.cjs",
+    "prepare": "npm run clean && npm run build",
+    "tests": "node --test-reporter=spec --test test/setup.cjs test/setup.mjs",
+    "test": "npm run prepare && npm run tests && npm run clean",
+    "prepack": "npm test",
+    "see-pack": "tar tvf $(npm pack)",
     "generate:lock": "npm install --package-lock-only",
     "version:patch": "npx changelogen@latest --bump --patch",
     "version:minor": "npx changelogen@latest --bump --minor",
@@ -32,6 +49,7 @@
   "engines": {
     "node": ">=20.10.x"
   },
+  "os": ["!win32"],
   "keywords": [
     "jamilservicos",
     "jamilservices",
@@ -47,6 +65,12 @@
     "cache"
   ],
   "devDependencies": {
+    "fast-glob": "^3.3.2",
+    "unbuild": "^2.0.0",
+    "ohash": "^1.1.3",
+    "uncrypto": "^0.1.3"
+  },
+  "dependencies": {
 
   }
 }
