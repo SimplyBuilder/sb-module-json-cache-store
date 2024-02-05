@@ -4,6 +4,7 @@
 !.github/**
 
 !.gitignore
+!.npmignore
 
 !README.md
 !LICENSE
@@ -14,6 +15,12 @@
 
 !src/
 !src/**
+
+!test/
+!test/**
+
+!scripts/
+!scripts/**
 
 **/*~
 **/*.log
