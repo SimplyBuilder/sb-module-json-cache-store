@@ -31,6 +31,7 @@
     "test": "npm run prepare && npm run tests && npm run clean",
     "prepack": "npm test",
     "see-pack": "tar tvf $(npm pack)",
+    "postinstall": "npm run build",
     "generate:lock": "npm install --package-lock-only",
     "version:patch": "npx changelogen@latest --bump --patch",
     "version:minor": "npx changelogen@latest --bump --minor",
@@ -49,7 +50,9 @@
   "engines": {
     "node": ">=20.10.x"
   },
-  "os": ["!win32"],
+  "os": [
+    "!win32"
+  ],
   "keywords": [
     "jamilservicos",
     "jamilservices",
@@ -65,12 +68,10 @@
     "cache"
   ],
   "devDependencies": {
+    "destr": "^2.0.2",
     "fast-glob": "^3.3.2",
-    "unbuild": "^2.0.0",
     "ohash": "^1.1.3",
+    "unbuild": "^2.0.0",
     "uncrypto": "^0.1.3"
-  },
-  "dependencies": {
-
   }
 }
