@@ -67,8 +67,17 @@ class JsonCacheInterface {
         try {
             const instance = this;
             const {cache} = jsonCacheModules.stores;
+            let test;
+            if(settings.test) {
+                test = settings.test;
+                delete settings.test
+            }
             instance[storeSymbol] = cache(settings);
             Object.freeze(instance[storeSymbol]);
+            const components = jsonCacheComponents();
+            components.cacheAutoClean({
+                cache: instance[storeSymbol], test
+            })
             return instance[storeSymbol].store().settings;
         } catch (err) {
             console.error(err);
