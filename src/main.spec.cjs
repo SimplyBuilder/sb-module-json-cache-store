@@ -11,7 +11,7 @@ exports = module.exports = (mock) => {
 
     describe("main module tests", () => {
         it("create instance", () => {
-            const result = jsonCache({ttl});
+            const result = jsonCache({ttl, test: true});
             instance = result;
             ok(typeof result.clear === "function");
             ok(typeof result.getJson === "function");
