@@ -10,10 +10,10 @@ exports = module.exports = (mock) => {
             ok(typeof jsonCacheModules === "object");
         });
         it("components module", () => {
-            ok(typeof jsonCacheModules.components === "function");
+            ok(typeof jsonCacheModules.components === "object");
         });
         it("stores module", () => {
-            ok(typeof jsonCacheModules.stores === "function");
+            ok(typeof jsonCacheModules.stores === "object");
         });
     });
 }
