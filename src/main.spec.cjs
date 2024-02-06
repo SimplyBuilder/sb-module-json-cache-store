@@ -7,7 +7,6 @@ const {deepEqual, equal, notEqual, ok} = require("node:assert");
 exports = module.exports = (mock) => {
     const {data} = mock;
     let instance;
-    const min = (1000 * 60 * 3);
     const ttl = (1000 * 60 * 2);
 
     describe("main module tests", () => {
@@ -34,7 +33,6 @@ exports = module.exports = (mock) => {
                 equal(result.url, data.url);
             });
         });
-
         it("getJson from cache", async () => {
             await instance.getJson({url: data.url, ttl: data.ttl}).then(result => {
                 ok(typeof result.key === "string");
@@ -49,7 +47,6 @@ exports = module.exports = (mock) => {
                 equal(result.cache, true);
             });
         });
-
         it("instance clear ", () => {
             const result = instance.clear();
             ok(result === 0);
