@@ -3,6 +3,7 @@
 let cacheInstance;
 
 const {jsonCacheModules} = require("./mods/main.cjs");
+const {jsonCacheComponents} = require("./mods/components/main.cjs");
 
 const settingsSymbol = Symbol("settings");
 const storeSymbol = Symbol("store");
@@ -27,30 +28,48 @@ class JsonCacheInterface {
             writable: false,
             value: () => {
                 const instance = this;
-                const store = instance[storeSymbol].store();
-                store.cache.clear();
+                return instance[storeSymbol].clear();
             }
         });
         Object.defineProperty(this, 'settings', {
             enumerable: true,
             get () {
                 const instance = this;
-                const settingsStore = instance[storeSymbol].store().settings;
-                if(settingsStore) return settingsStore;
+                const {settings} = instance[storeSymbol].store();
+                if(settings) return settings;
                 return {};
+            }
+        });
+        Object.defineProperty(this, 'getJson', {
+            enumerable: true,
+            configurable: false,
+            writable: false,
+            value: async (data) => {
+                const {url, ttl, dinanic} = data;
+                const instance = this;
+                const store = instance[storeSymbol];
+                const {settings} = instance[storeSymbol].store();
+                const components = jsonCacheComponents();
+                const fetchJson = await components.cacheJson({
+                    store, settings, req: {url, ttl, dinanic}
+                });
+                if(fetchJson) return fetchJson;
+                return undefined;
             }
         });
         Object.freeze(this['clear']);
         Object.freeze(this['settings']);
+        Object.freeze(this['getJson']);
         Object.freeze(this[settingsSymbol]);
         Object.preventExtensions(this);
     }
     [settingsSymbol](settings) {
         try {
-            const store = jsonCacheModules.stores();
-            this[storeSymbol] = store.cache(settings);
-            Object.freeze(this[storeSymbol]);
-            return settings;
+            const instance = this;
+            const {cache} = jsonCacheModules.stores;
+            instance[storeSymbol] = cache(settings);
+            Object.freeze(instance[storeSymbol]);
+            return instance[storeSymbol].store().settings;
         } catch (err) {
             console.error(err);
         }
