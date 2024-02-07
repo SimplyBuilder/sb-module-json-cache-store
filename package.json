@@ -1,7 +1,7 @@
 {
   "name": "@jamilservices/sb-module-json-cache-store",
   "description": "Simply Builder Module - Temporary Fetch JSON Cache",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "./lib/json-cache.min.umd.js",
   "module": "./lib/json-cache.min.esm.mjs",
   "browser": "./lib/json-cache.min.umd.js",
