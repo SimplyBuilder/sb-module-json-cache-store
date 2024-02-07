@@ -97,7 +97,7 @@ class JsonCacheInterface {
          * Clears the cache storage.
          * This method provides a public interface to clear cached data.
          *
-         * @returns {boolean} - returns always true
+         * @returns {number} The number of items removed from the cache, indicating the cache is now empty.
          */
         Object.defineProperty(this, 'clear', {
             enumerable: true,
@@ -105,8 +105,7 @@ class JsonCacheInterface {
             writable: false,
             value: () => {
                 const instance = this;
-                instance[storeSymbol].clear();
-                return true;
+                return instance[storeSymbol].clear();
             }
         });
         /**
