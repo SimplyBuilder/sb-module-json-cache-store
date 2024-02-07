@@ -21,4 +21,4 @@ if(commonJsfiles.length >= 1) {
         }
     });
 }
-//require("./build/plain.cjs");
+require("./build/plain.cjs");
