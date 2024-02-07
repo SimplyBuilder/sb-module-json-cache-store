@@ -45,13 +45,13 @@ class JsonCacheInterface {
             configurable: false,
             writable: false,
             value: async (data) => {
-                const {url, ttl, dinanic} = data;
+                const {url, ttl, dynamic} = data;
                 const instance = this;
                 const store = instance[storeSymbol];
                 const {settings} = instance[storeSymbol].store();
                 const components = jsonCacheComponents();
                 const fetchJson = await components.cacheJson({
-                    store, settings, req: {url, ttl, dinanic}
+                    store, settings, req: {url, ttl, dynamic}
                 });
                 if(fetchJson) return fetchJson;
                 return undefined;
