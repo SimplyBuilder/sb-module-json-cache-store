@@ -189,6 +189,11 @@ Test Different Configurations: Cache behavior can significantly impact applicati
 
 By carefully configuring the jsonCache function, you can achieve an effective caching strategy that enhances your application's responsiveness and efficiency.
 
+# 
+### <span id="contribution-guidelines">Contribution Guidelines</span>             
+See the [contribution guidelines](https://github.com/SimplyBuilder/sb-module-json-cache-store/blob/main/CONTRIBUTING.md)       
+if you'd like to contribute to `@jamilservices/sb-module-json-cache-store`.      
+
 
 #
 ### <span id="license">License</span>
