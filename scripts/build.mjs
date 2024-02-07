@@ -45,7 +45,7 @@ const umdGenerate = {
             copyFile('lib/json-cache.min.umd.js', 'lib/json-cache.min.umd.mjs', (r) => r);
             copyFile('build/min/json-cache.cjs', 'lib/json-cache.min.common.cjs', (r) => r);
             copyFile('build/min/json-cache.mjs', 'lib/json-cache.min.esm.mjs', (r) => r);
-            copyFile('build/docs/json-cache.d.ts', 'lib/json-cache.d.ts', (r) => r);
+            copyFile('types.d.ts', 'lib/types.d.ts', (r) => r);
         }
     }
 }
