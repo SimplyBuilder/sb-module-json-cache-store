@@ -9,7 +9,8 @@ exports = module.exports = (mock) => {
     const {data, itemId, items} = mock
     const req = {
         url: data.url,
-        ttl: data.ttl
+        ttl: data.ttl,
+        dynamic: true
     };
     const store = {
         getItem: (data) => {
