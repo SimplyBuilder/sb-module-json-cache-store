@@ -1,7 +1,6 @@
-# sb-module-json-cache-store
-
+# sb-module-json-cache-store  [![Node.js Package](https://github.com/SimplyBuilder/sb-module-json-cache-store/actions/workflows/npm-publish.yml/badge.svg?event=workflow_dispatch)](https://github.com/SimplyBuilder/sb-module-json-cache-store/actions/workflows/npm-publish.yml)          
 The `sb-module-json-cache-store` is a Simply Builder Module designed for temporary external JSON caching. This module supports Universal Module Definition (UMD), making it compatible with various environments, including browser scripts, ES Modules (ESM), and CommonJS, as well as Node.js environments with or without ESM configuration.       
-
+                
 #         
 ### 🤖 Documented by Artificial Intelligence                   
 
@@ -26,10 +25,16 @@ This module is designed to be included directly in your project. You can referen
 
 
 #     
-### Browser Usage (Script Tag)
+### Browser Usage (Script Tag)          
+CDN:        
+~~~text
+https://unpkg.com/@jamilservices/sb-module-json-cache-store@latest/lib/json-cache.min.umd.js
+https://cdn.jsdelivr.net/npm/@jamilservices/sb-module-json-cache-store@latest/lib/json-cache.min.umd.js
+https://cdn.skypack.dev/@jamilservices/sb-module-json-cache-store@latest/lib/json-cache.min.umd.js?min
+~~~              
 
 ~~~html
-<script src="lib/json-cache.min.umd.js"></script>
+<script src="https://unpkg.com/@jamilservices/sb-module-json-cache-store@latest/lib/json-cache.min.umd.js"></script>
 <script>
     if(SimplyBuilder?.jsonCache) console.log("jsonCache loaded.");
 </script>
@@ -41,7 +46,7 @@ For modern browsers supporting ES Modules:
 
 ~~~html
 <script type="module">
-    import "lib/json-cache.min.umd.mjs";
+    import "https://unpkg.com/@jamilservices/sb-module-json-cache-store@latest/lib/json-cache.min.umd.js";
     if(SimplyBuilder?.jsonCache) console.log("jsonCache loaded.");
 </script>
 ~~~        
