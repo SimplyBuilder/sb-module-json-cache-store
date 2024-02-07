@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v1.0.2
+
+[compare changes](https://github.com/SimplyBuilder/sb-module-json-cache-store/compare/v1.0.1...v1.0.2)
+
+### 🚀 Enhancements
+
+- Update clear method return type in main.cjs ([7a356fe](https://github.com/SimplyBuilder/sb-module-json-cache-store/commit/7a356fe))
+
+### 💅 Refactors
+
+- Update mock.cjs to include a clear function ([3201f33](https://github.com/SimplyBuilder/sb-module-json-cache-store/commit/3201f33))
+
+### 🏡 Chore
+
+- Update npm-publish workflow ([5ac1bbd](https://github.com/SimplyBuilder/sb-module-json-cache-store/commit/5ac1bbd))
+
+### ❤️ Contributors
+
+- JamilServices <jamilservicos@gmail.com>
+
 ## v1.0.1
 
 
