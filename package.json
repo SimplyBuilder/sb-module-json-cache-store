@@ -2,10 +2,10 @@
   "name": "@jamilservices/sb-module-json-cache-store",
   "description": "Simply Builder Module - Temporary Fetch JSON Cache",
   "version": "1.0.0",
-  "main": "./lib/json-cache.min.common.cjs",
+  "main": "./lib/json-cache.min.umd.js",
   "module": "./lib/json-cache.min.esm.mjs",
   "browser": "./lib/json-cache.min.umd.js",
-  "types": "./lib/json-cache.d.ts",
+  "types": "./lib/types.d.ts",
   "type": "module",
   "files": [
     "AUTHORS",
@@ -14,7 +14,7 @@
     "lib/json-cache.min.umd.cjs",
     "lib/json-cache.min.esm.mjs",
     "lib/json-cache.min.common.cjs",
-    "lib/json-cache.d.ts"
+    "lib/types.d.ts"
   ],
   "imports": {
     "#json-cache.min.umd.js": "./lib/json-cache.min.umd.js",
@@ -23,10 +23,10 @@
   },
   "exports": {
     "node": {
-      "default": "./lib/json-cache.min.common.cjs"
+      "default": "./lib/json-cache.min.umd.cjs"
     },
     "default": "./lib/json-cache.min.umd.js",
-    "types": "./lib/json-cache.d.ts"
+    "types": "./lib/types.d.ts"
   },
   "scripts": {
     "build": "node scripts/build.mjs",
