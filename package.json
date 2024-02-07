@@ -16,6 +16,11 @@
     "lib/json-cache.min.common.cjs",
     "lib/json-cache.d.ts"
   ],
+  "imports": {
+    "#json-cache.min.umd.js": "./lib/json-cache.min.umd.js",
+    "#json-cache.min.umd.cjs": "./lib/json-cache.min.umd.cjs",
+    "#json-cache.min.umd.mjs": "./lib/json-cache.min.umd.mjs"
+  },
   "exports": {
     "node": {
       "default": "./lib/json-cache.min.common.cjs"
