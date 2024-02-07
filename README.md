@@ -8,7 +8,9 @@ The `@jamilservices/sb-module-json-cache-store` is a Simply Builder Module desig
 
 [![GitHub package.json dynamic](https://img.shields.io/github/package-json/version/SimplyBuilder/sb-module-json-cache-store)](https://github.com/SimplyBuilder/sb-module-json-cache-store/blob/main/package.json#L4)
 [![GitHub Release](https://img.shields.io/github/v/release/SimplyBuilder/sb-module-json-cache-store)](https://github.com/SimplyBuilder/sb-module-json-cache-store/releases)
-[![Test with Node.js](https://img.shields.io/badge/Node.js->=20_10-blue?logo=node.js&logoColor=white)](https://nodejs.org)
+[![Test with Node.js](https://img.shields.io/badge/Node.js->=20_10-blue?logo=node.js&logoColor=white)](https://nodejs.org) 
+![GitHub top language](https://img.shields.io/github/languages/top/SimplyBuilder/sb-module-json-cache-store)
+
 
 [![npm - @jamilservices/sb-module-json-cache-store](https://img.shields.io/badge/npm-%40jamilservices%2Fsb--module--json--cache--store-blue?logo=npm&logoColor=white)](https://www.npmjs.com/package/@jamilservices/sb-module-json-cache-store)
 [![yarn - @jamilservices/sb-module-json-cache-store](https://img.shields.io/badge/yarn-%40jamilservices%2Fsb--module--json--cache--store-blue?logo=yarn&logoColor=white)](https://yarnpkg.com/package/@jamilservices/sb-module-json-cache-store)
