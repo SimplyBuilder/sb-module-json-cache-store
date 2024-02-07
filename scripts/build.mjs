@@ -115,25 +115,6 @@ const plainGenerate = {
         }
     }
 };
-const docsGenerate = {
-    entries: [{
-        builder: 'untyped',
-        input: 'src/main.cjs',
-        name: 'json-cache'
-    }],
-    outDir: 'build/docs',
-    clean: true,
-    declaration: "node20",
-    failOnWarn: false,
-    rollup: {
-        emitCJS: true
-    },
-    hooks: {
-        "build:done": ctx => {
-            console.log("docs done");
-        }
-    }
-}
 
 const umdGenerateAndLib = () => {
     build('.', false, umdGenerate).then();
@@ -145,8 +126,4 @@ const plainCommonGenerate = () => {
     build('.', false, plainGenerate).then(minFilesGenerate);
 }
 
-const buildDocs = () => {
-    build('.', false, docsGenerate).then(plainCommonGenerate);
-}
-
-buildDocs();
+plainCommonGenerate();
