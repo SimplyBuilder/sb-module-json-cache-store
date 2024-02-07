@@ -45,6 +45,10 @@ const instance = {
     },
     store: () => {
         return {items};
+    },
+    clear: () => {
+        items.clear();
+        return items.size;
     }
 };
 
