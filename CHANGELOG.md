@@ -1,6 +1,39 @@
 # Changelog
 
 
+## v1.0.3
+
+[compare changes](https://github.com/SimplyBuilder/sb-module-json-cache-store/compare/v1.0.2...v1.0.3)
+
+### 🚀 Enhancements
+
+- Add sb-module-json-cache-store badge to README.md ([4f79136](https://github.com/SimplyBuilder/sb-module-json-cache-store/commit/4f79136))
+- Add tsconfig.json configuration file ([90fd675](https://github.com/SimplyBuilder/sb-module-json-cache-store/commit/90fd675))
+- Add SECURITY.md file ([b826a90](https://github.com/SimplyBuilder/sb-module-json-cache-store/commit/b826a90))
+- Add Code of Conduct ([613acac](https://github.com/SimplyBuilder/sb-module-json-cache-store/commit/613acac))
+- **contributing:** Add CONTRIBUTING.md file ([8c0b8e5](https://github.com/SimplyBuilder/sb-module-json-cache-store/commit/8c0b8e5))
+- Add CONTRIBUTING.md ([889ca17](https://github.com/SimplyBuilder/sb-module-json-cache-store/commit/889ca17))
+- Add CONTRIBUTING.md file ([0d4917c](https://github.com/SimplyBuilder/sb-module-json-cache-store/commit/0d4917c))
+- **GOVERNANCE:** Add governance document ([5912517](https://github.com/SimplyBuilder/sb-module-json-cache-store/commit/5912517))
+
+### 💅 Refactors
+
+- Update module name in README.md ([bdc90b0](https://github.com/SimplyBuilder/sb-module-json-cache-store/commit/bdc90b0))
+
+### 📖 Documentation
+
+- Update README.md with SimplyBuilder module information ([c0ac482](https://github.com/SimplyBuilder/sb-module-json-cache-store/commit/c0ac482))
+
+### 🏡 Chore
+
+- Add tsconfig.json to .gitignore ([1a5e266](https://github.com/SimplyBuilder/sb-module-json-cache-store/commit/1a5e266))
+- Update README.md with contribution guidelines ([e8a9f9f](https://github.com/SimplyBuilder/sb-module-json-cache-store/commit/e8a9f9f))
+- Update .gitignore to include GOVERNANCE.md ([7c58818](https://github.com/SimplyBuilder/sb-module-json-cache-store/commit/7c58818))
+
+### ❤️ Contributors
+
+- JamilServices <jamilservicos@gmail.com>
+
 ## v1.0.2
 
 [compare changes](https://github.com/SimplyBuilder/sb-module-json-cache-store/compare/v1.0.1...v1.0.2)
