@@ -1,6 +1,17 @@
 # sb-module-json-cache-store  [![Node.js Package](https://github.com/SimplyBuilder/sb-module-json-cache-store/actions/workflows/npm-publish.yml/badge.svg?event=workflow_dispatch)](https://github.com/SimplyBuilder/sb-module-json-cache-store/actions/workflows/npm-publish.yml)          
 The `sb-module-json-cache-store` is a Simply Builder Module designed for temporary external JSON caching. This module supports Universal Module Definition (UMD), making it compatible with various environments, including browser scripts, ES Modules (ESM), and CommonJS, as well as Node.js environments with or without ESM configuration.       
-                
+#         
+[![SimplyBuilder](https://img.shields.io/badge/Author-Gerv%C3%A1sio_J%C3%BAnior-brightgreen?style=flat-square&color=%23fedcba)](https://github.com/jamilservicos)
+[![SimplyBuilder](https://img.shields.io/badge/SimplyBuilder-Module-brightgreen?style=flat-square&label=SimplyBuilder&color=%23fedcba)](https://simplybuilder.github.io)
+[![SimplyBuilder - sb-module-json-cache-store](https://img.shields.io/static/v1?label=SimplyBuilder&message=sb-module-json-cache-store&color=blue&logo=github)](https://github.com/SimplyBuilder/sb-module-json-cache-store)
+[![GitHub License](https://img.shields.io/github/license/SimplyBuilder/sb-module-json-cache-store)](https://github.com/SimplyBuilder/sb-module-json-cache-store/blob/main/LICENSE)
+
+[![GitHub package.json dynamic](https://img.shields.io/github/package-json/version/SimplyBuilder/sb-module-json-cache-store)](https://github.com/SimplyBuilder/sb-module-json-cache-store/blob/main/package.json#L4)
+[![GitHub Release](https://img.shields.io/github/v/release/SimplyBuilder/sb-module-json-cache-store)](https://github.com/SimplyBuilder/sb-module-json-cache-store/releases)
+[![Test with Node.js](https://img.shields.io/badge/Node.js->=20_10-blue?logo=node.js&logoColor=white)](https://nodejs.org)
+
+[![npm - @jamilservices/sb-module-json-cache-store](https://img.shields.io/badge/npm-%40jamilservices%2Fsb--module--json--cache--store-blue?logo=npm&logoColor=white)](https://www.npmjs.com/package/@jamilservices/sb-module-json-cache-store)
+[![yarn - @jamilservices/sb-module-json-cache-store](https://img.shields.io/badge/yarn-%40jamilservices%2Fsb--module--json--cache--store-blue?logo=yarn&logoColor=white)](https://yarnpkg.com/package/@jamilservices/sb-module-json-cache-store)
 #         
 ### 🤖 Documented by Artificial Intelligence                   
 
