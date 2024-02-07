@@ -13,6 +13,8 @@
 !package.json
 !package-lock.json
 
+!types.d.ts
+
 !src/
 !src/**
 
