@@ -1,5 +1,5 @@
 # sb-module-json-cache-store  [![Node.js Package](https://github.com/SimplyBuilder/sb-module-json-cache-store/actions/workflows/npm-publish.yml/badge.svg?event=workflow_dispatch)](https://github.com/SimplyBuilder/sb-module-json-cache-store/actions/workflows/npm-publish.yml)          
-The `sb-module-json-cache-store` is a Simply Builder Module designed for temporary external JSON caching. This module supports Universal Module Definition (UMD), making it compatible with various environments, including browser scripts, ES Modules (ESM), and CommonJS, as well as Node.js environments with or without ESM configuration.       
+The `@jamilservices/sb-module-json-cache-store` is a Simply Builder Module designed for temporary external JSON caching. This module supports Universal Module Definition (UMD), making it compatible with various environments, including browser scripts, ES Modules (ESM), and CommonJS, as well as Node.js environments with or without ESM configuration.       
 #         
 [![SimplyBuilder](https://img.shields.io/badge/Author-Gerv%C3%A1sio_J%C3%BAnior-brightgreen?style=flat-square&color=%23fedcba)](https://github.com/jamilservicos)
 [![SimplyBuilder](https://img.shields.io/badge/SimplyBuilder-Module-brightgreen?style=flat-square&label=SimplyBuilder&color=%23fedcba)](https://simplybuilder.github.io)
