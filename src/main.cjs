@@ -63,7 +63,7 @@ class JsonCacheInterface {
         Object.freeze(this[settingsSymbol]);
         Object.preventExtensions(this);
     }
-    [settingsSymbol](settings) {
+    [settingsSymbol](settings = {}) {
         try {
             const instance = this;
             const {cache} = jsonCacheModules.stores;
