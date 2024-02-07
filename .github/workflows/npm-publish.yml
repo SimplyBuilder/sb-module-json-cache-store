@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    if: github.repository == 'SimplyBuilder/sb-module-to-rem'
+    if: github.repository == 'SimplyBuilder/sb-module-json-cache-store'
     runs-on: ubuntu-latest
     permissions:
       contents: read
